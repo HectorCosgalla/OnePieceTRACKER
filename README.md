@@ -3,7 +3,6 @@
 A personal project that has the  goal to help me to track which volumes of the One Piece manga i have in my collection.
 
 ## how to navigate through this
----
 This was thought to be a mono repo so here you could find a lot of branches and each one of them has a purpose:
 
 * The **master** branch will work as read only since i will be using other branches to implement it.
