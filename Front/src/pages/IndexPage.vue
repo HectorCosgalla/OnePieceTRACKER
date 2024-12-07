@@ -1,7 +1,7 @@
 <template>
   <q-page class="flex-center">
     <h1>Volumenes:</h1>
-    <div class="q-ma-md q-py-sm q-px-lg nami shadow-13">
+    <div class="row q-ma-xl q-py-sm q-px-lg items-stretch">
       <VolumeCard
         v-for="volume in volume_list"
         :key="volume.id"
@@ -33,19 +33,15 @@ function initializeVolumeList() {
     volume.bought = false;
     volume.fav = false;
     volume_list.value.push(volume);
-    console.log(volume.title);
   }
 }
 
 function onBought(id){
   volume_list.value.at(id).bought = changeStatus(volume_list.value.at(id).bought);
-  console.log(volume_list.value);
-  
 }
 
 function onFave(id){
   volume_list.value.at(id).fav = changeStatus(volume_list.value.at(id).fav);
-  console.log(volume_list.value);
 }
 
 function changeStatus(isTrue){
